@@ -12,13 +12,19 @@ import { IListItems } from '../../interface/IListItems.infercade';
 export class ListComponent {
   public addItem = signal(true);
 
-  #setListItems = signal<IListItems[]>([this.#parserItems()]);
-  getListItems = this.#setListItems.asReadonly();
+  #setListItems = signal<IListItems[]>(this.#parserItems());
+  public etListItems = this.#setListItems.asReadonly();
 
   #parserItems(){
     return JSON.parse(localStorage.getItem('@my-list') || '[]');
   }
+
   public getInputAndAddItem(value: IListItems){
-    localStorage.setItem('@my-list', JSON.stringify([value]));
+      localStorage.setItem(
+     '@my-list', 
+      JSON.stringify([...this.#setListItems(), value])
+      );
+
+      return this.#setListItems.set(this.#parserItems());
   }
 }

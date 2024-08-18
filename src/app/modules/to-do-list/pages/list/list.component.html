@@ -11,6 +11,6 @@
             Crie uma lista de tarefas
         </button>
     } @else {
-        <app-input-add-itens (outputAddListItem)="getInputAndAddItem($event)"/>
+        <app-input-add-itens [inputListItems]="etListItems()" (outputAddListItem)="getInputAndAddItem($event)"/>
     }
 </div>
