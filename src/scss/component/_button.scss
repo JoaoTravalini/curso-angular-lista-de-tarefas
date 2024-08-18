@@ -21,13 +21,16 @@
         }
     }
 
-    &.btn-dangery,
+    &.btn-danger,
     &.btn-danger-circle{
         color: var(--white);
         background: var(--red);
 
         &:hover{
-            background: var(--primary-010);
+            background: var(--red-010);
+            color: #f8e3e3;
+            transform: scale(1.06);
+            transition: 0.5s;
         }
     }
 

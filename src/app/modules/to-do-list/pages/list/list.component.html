@@ -17,4 +17,12 @@
 </div>
 } @else {
     <app-input-add-itens [inputListItems]="etListItems()" (outputAddListItem)="getInputAndAddItem($event)"/>
+
+    <main class="container">
+        <p>a</p>
+    </main>
+
+    <footer>
+        <button class="btn btn-danger" (click)="deleteAllItems()">Deletar todos os Itens</button>
+    </footer>
 }
