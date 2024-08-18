@@ -1,3 +1,4 @@
+@if(!etListItems().length){
 <div class="container">
     <img src="../../../../../assets/img/task-list-null.png"
     alt="Sua lista está vazia! Imagem ilustrativa"
@@ -14,3 +15,6 @@
         <app-input-add-itens [inputListItems]="etListItems()" (outputAddListItem)="getInputAndAddItem($event)"/>
     }
 </div>
+} @else {
+    <app-input-add-itens [inputListItems]="etListItems()" (outputAddListItem)="getInputAndAddItem($event)"/>
+}
