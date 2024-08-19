@@ -12,12 +12,14 @@
 
     &.btn-primary,
     &.btn-primary-circle{
-        color: var(--primary);
-        background: var(--white);
+        color: var(--white);
+        background: var(--primary);
+        border: 2px solid var(--primary);
 
         &:hover{
-            background: var(--primary-010);
-            color: var(--white);
+            background: var(--white);
+            color: var(--primary);
+            border: 2px solid var(--primary);
         }
     }
 
