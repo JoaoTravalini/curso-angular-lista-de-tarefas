@@ -1,11 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { InputAddItensComponent } from '../../components/input-add-itens/input-add-itens.component';
 import { IListItems } from '../../interface/IListItems.infercade';
+import { InputListItemComponent } from '../../components/input-list-item/input-list-item.component';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [InputAddItensComponent],
+  imports: [InputAddItensComponent, InputListItemComponent],
   templateUrl: './list.component.html',
   styleUrl: './list.component.scss'
 })
@@ -26,6 +27,20 @@ export class ListComponent {
       );
 
       return this.#setListItems.set(this.#parserItems());
+  }
+
+  public listItemsStage(value: 'pending' | 'completed'){
+    return this.etListItems().filter((res: IListItems) => {
+      if(value === 'pending'){
+        return !res.checked;
+      }
+
+      if(value === 'completed'){
+        return res.checked;
+      }
+
+      return res;
+    })
   }
 
   public deleteAllItems(){
