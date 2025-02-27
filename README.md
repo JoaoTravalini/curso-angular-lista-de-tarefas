@@ -2,7 +2,7 @@
 Este projeto consiste em uma Lista de tarefas para visualização, utilizando **Angular** e **TypeScript**. O objetivo é praticar o uso do framework e as respectivas linguagens utilizadas.  
 
 ### 🎥 **Vídeo para visualização do projeto:**  
-[Assista no Google Drive](https://drive.google.com/file/d/1ag_yThLyWiXXNSIdAgIdeyvZyW1zhd-Z/view?usp=sharing)  
+[Assista no Google Drive](https://drive.google.com/file/d/1yRpvCMl0YC1pN3JSIwnRvGYTHV_NMuBy/view?usp=sharing)  
 
 ## 🛠 **Tecnologias Utilizadas**  
 - Angular  
