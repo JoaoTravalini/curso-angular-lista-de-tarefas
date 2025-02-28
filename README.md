@@ -1,4 +1,4 @@
-# **📌 Descrição do Projeto - Pokédex**  
+# **📌 Descrição do Projeto - Lista de tarefas**  
 Este projeto consiste em uma Lista de tarefas para visualização, utilizando **Angular** e **TypeScript**. O objetivo é praticar o uso do framework e as respectivas linguagens utilizadas.  
 
 ### 🎥 **Vídeo para visualização do projeto:**  
